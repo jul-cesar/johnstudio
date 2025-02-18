@@ -1,6 +1,7 @@
 "use client";
 
 import { type SVGProps } from "react";
+import { TextAnimate } from "./magicui/text-animate";
 import { GradientHeading } from "./ui/gradient-heading";
 import { LogoCarousel } from "./ui/logo-carousel";
 
@@ -409,14 +410,20 @@ const allLogos = [
 
 export function LogoCarouselDemo() {
   return (
-    <div className="space-y-8 py-24 bg-[#060606] min-h-screen ">
+    <div className="space-y-8 py-24 bg-[#060606] ">
       <div className="mx-auto flex w-full max-w-screen-lg flex-col items-center space-y-8 ">
         <div className="text-center">
-          <GradientHeading variant="light">
+          <TextAnimate
+            animation="blurIn"
+            as="h1"
+            className="text-[#FCA04D] text-4xl font-bold"
+          >
             Algunos de nuestros clientes
-          </GradientHeading>
+          </TextAnimate>
 
-          <GradientHeading size="xxl">Unetenos!</GradientHeading>
+          <GradientHeading size="xxl" variant={"perso"}>
+            Unetenos!
+          </GradientHeading>
         </div>
 
         <LogoCarousel columnCount={3} logos={allLogos} />

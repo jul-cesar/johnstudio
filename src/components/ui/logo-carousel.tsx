@@ -126,7 +126,7 @@ export function LogoCarousel({ columnCount = 2, logos }: LogoCarouselProps) {
   }, [logos, columnCount]);
 
   return (
-    <div className="bg-[#060606] p-8 rounded-lg">
+    <div className="bg-[#09090b] p-8 rounded-lg">
       <div className="flex space-x-4">
         {logoSets.map((logos, index) => (
           <LogoColumn

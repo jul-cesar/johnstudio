@@ -81,7 +81,7 @@ function FloatingPaths({ position }: { position: number }) {
 
 export function BackgroundPaths({
   title = "Background Paths",
-  subtitle = "Discover the power of innovative design and seamless functionality.",
+  subtitle = "Diseños, estrategia y contenidos.",
 }: {
   title?: string;
   subtitle?: string;
@@ -102,7 +102,7 @@ export function BackgroundPaths({
           transition={{ duration: 2 }}
           className="max-w-4xl mx-auto"
         >
-          <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-8 tracking-tighter">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold  tracking-tighter">
             {words.map((word, wordIndex) => (
               <span key={wordIndex} className="inline-block mr-4 last:mr-0">
                 {word.split("").map((letter, letterIndex) => (
@@ -153,7 +153,7 @@ export function BackgroundPaths({
                     `inline animate-gradient text-2xl bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
                   )}
                 >
-                  Introducing Magic UI
+                  Comienza ya!
                 </span>
                 <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
               </AnimatedGradientText>
@@ -167,10 +167,10 @@ export function BackgroundPaths({
           className="w-full max-w-md mx-auto mt-8"
         >
           <HeroVideoDialog
-            className="w-full aspect-video"
+            className="w-full aspect-[9/16]"
             animationStyle="from-center"
-            videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-            thumbnailSrc="https://startup-template-sage.vercel.app/hero-dark.png"
+            videoSrc="video.mp4"
+            thumbnailSrc="tn.png"
             thumbnailAlt="Hero Video"
           />
         </motion.div>
