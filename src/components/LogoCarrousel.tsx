@@ -412,12 +412,11 @@ export function LogoCarouselDemo() {
     <div className="space-y-8 py-24 bg-[#060606] min-h-screen ">
       <div className="mx-auto flex w-full max-w-screen-lg flex-col items-center space-y-8 ">
         <div className="text-center">
-          <GradientHeading variant="secondary">
+          <GradientHeading variant="light">
             Algunos de nuestros clientes
           </GradientHeading>
-          <a href="https://www.newcult.co" target="_blank">
-            <GradientHeading size="xxl">Unetenos!</GradientHeading>
-          </a>
+
+          <GradientHeading size="xxl">Unetenos!</GradientHeading>
         </div>
 
         <LogoCarousel columnCount={3} logos={allLogos} />

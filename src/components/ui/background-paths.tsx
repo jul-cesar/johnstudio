@@ -1,8 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ChevronRight } from "lucide-react";
+import { cn } from "../../lib/utils";
+import { AnimatedGradientText } from "../magicui/animated-gradient-text";
 import HeroVideoDialog from "../magicui/hero-video-dialog";
-import { Button } from "./button";
 
 function FloatingPaths({ position }: { position: number }) {
   const colors = [
@@ -139,27 +141,23 @@ export function BackgroundPaths({
           </motion.p>
 
           <div
-            className="inline-block group relative bg-black
-                       p-px rounded-2xl backdrop-blur-lg overflow-hidden shadow-lg hover:shadow-xl 
+            className="inline-block group 
+                       p-px rounded-2xl  overflow-hidden shadow-lg hover:shadow-xl 
                        transition-shadow duration-300"
           >
-            <Button
-              variant="ghost"
-              className="rounded-[1.15rem] px-8 py-6 text-lg font-semibold backdrop-blur-md 
-                         bg-neutral-950/95 hover:bg-neutral-950/100 text-white transition-all duration-300 
-                         group-hover:-translate-y-0.5 border border-[#FCA04D]/10
-                         hover:shadow-md hover:shadow-[#E13D21]/20"
-            >
-              <span className="opacity-90 group-hover:opacity-100 transition-opacity">
-                Discover Excellence
-              </span>
-              <span
-                className="ml-3 opacity-70 group-hover:opacity-100 group-hover:translate-x-1.5 
-                           transition-all duration-300"
-              >
-                →
-              </span>
-            </Button>
+            <div className=" items-center justify-center">
+              <AnimatedGradientText className="bg-black">
+                🎉 <hr className="mx-2 h-4 w-px shrink-0" />
+                <span
+                  className={cn(
+                    `inline animate-gradient text-2xl bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
+                  )}
+                >
+                  Introducing Magic UI
+                </span>
+                <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+              </AnimatedGradientText>
+            </div>
           </div>
         </motion.div>
         <motion.div

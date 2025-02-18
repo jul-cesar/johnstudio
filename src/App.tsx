@@ -5,7 +5,7 @@ import { BackgroundPaths } from "./components/ui/background-paths";
 
 function App() {
   return (
-    <section className="bg-black">
+    <section className="">
       <BackgroundPaths title="John Studio" />
       <LogoCarouselDemo />
       <InfiniteSliderVertical />
