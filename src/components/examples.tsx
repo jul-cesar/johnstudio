@@ -11,7 +11,7 @@ export function InfiniteSliderVertical() {
       <p className="text-xl md:text-2xl mb-12 text-center max-w-2xl">
         Una muestra de los proyectos que nos enorgullecen
       </p>
-      <div className="flex h-[350px] space-x-4">
+      <div className="flex h-[350px] space-x-5">
         <InfiniteSlider direction="vertical">
           <img
             src="/images/barliza/barliza1.jpg"
