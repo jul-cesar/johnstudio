@@ -167,7 +167,7 @@ export function BackgroundPaths({
           className="w-full max-w-md mx-auto mt-8"
         >
           <HeroVideoDialog
-            className="w-full aspect-[9/16]"
+            className="w-full aspect-video"
             animationStyle="from-center"
             videoSrc="video.mp4"
             thumbnailSrc="tn.png"
