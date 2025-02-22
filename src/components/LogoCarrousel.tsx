@@ -4,6 +4,7 @@ import { type SVGProps } from "react";
 import { TextAnimate } from "./magicui/text-animate";
 import { GradientHeading } from "./ui/gradient-heading";
 import { LogoCarousel } from "./ui/logo-carousel";
+import { StarsBackground } from "./ui/stars-background";
 
 function AppleIcon(props: SVGProps<SVGSVGElement>) {
   return (
@@ -410,23 +411,26 @@ const allLogos = [
 
 export function LogoCarouselDemo() {
   return (
-    <div className="space-y-8 py-24 bg-[#060606] ">
-      <div className="mx-auto flex w-full max-w-screen-lg flex-col items-center space-y-8 ">
-        <div className="text-center">
-          <TextAnimate
-            animation="blurIn"
-            as="h1"
-            className="text-[#FCA04D] text-4xl font-bold"
-          >
-            Algunos de nuestros clientes
-          </TextAnimate>
+    <div className="min-h-screen w-full  relative overflow-hidden md:space-x-8 space-x-3">
+      <StarsBackground />
+      <div className="space-y-8 py-36  ">
+        <div className="mx-auto flex w-full max-w-screen-lg flex-col items-center space-y-8 ">
+          <div className="text-center">
+            <TextAnimate
+              animation="blurIn"
+              as="h1"
+              className="text-[#FCA04D] text-4xl font-bold"
+            >
+              Algunos de nuestros clientes
+            </TextAnimate>
 
-          <GradientHeading size="xxl" variant={"perso"}>
-            Unetenos!
-          </GradientHeading>
+            <GradientHeading size="xl" variant={"perso"}>
+              Unetenos!
+            </GradientHeading>
+          </div>
+
+          <LogoCarousel columnCount={3} logos={allLogos} />
         </div>
-
-        <LogoCarousel columnCount={3} logos={allLogos} />
       </div>
     </div>
   );

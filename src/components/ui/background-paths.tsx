@@ -32,7 +32,7 @@ function FloatingPaths({ position }: { position: number }) {
       gradientId: `gradient-${i}`,
       gradientStart,
       gradientEnd,
-      width: 0.5 + i * 0.03,
+      width: 0.3 + i * 0.02,
     };
   });
 

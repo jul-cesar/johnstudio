@@ -134,10 +134,22 @@ export default {
   				to: {
   					backgroundPosition: 'var(--bg-size) 0'
   				}
+  			},
+  			grid: {
+  				'0%': {
+  					transform: 'translateY(-50%)'
+  				},
+  				'100%': {
+  					transform: 'translateY(0)'
+  				}
   			}
   		},
   		animation: {
-  			gradient: 'gradient 8s linear infinite'
+  			gradient: 'gradient 8s linear infinite',
+  			grid: 'grid 15s linear infinite'
+  		},
+  		maskImage: {
+  			'radial-gradient': 'radial-gradient(var(--tw-gradient-stops))'
   		}
   	}
   },
