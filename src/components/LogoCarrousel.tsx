@@ -411,7 +411,7 @@ const allLogos = [
 
 export function LogoCarouselDemo() {
   return (
-    <div className="min-h-screen w-full  relative overflow-hidden md:space-x-8 space-x-3">
+    <div className="w-full flex flex-col items-center justify-center  relative overflow-hidden md:space-x-8 space-x-3">
       <StarsBackground />
       <div className="space-y-8 py-36  ">
         <div className="mx-auto flex w-full max-w-screen-lg flex-col items-center space-y-8 ">
@@ -419,7 +419,7 @@ export function LogoCarouselDemo() {
             <TextAnimate
               animation="blurIn"
               as="h1"
-              className="text-[#FCA04D] text-4xl font-bold"
+              className="text-[#FCA04D] text-3xl md:text-4xl font-bold"
             >
               Algunos de nuestros clientes
             </TextAnimate>

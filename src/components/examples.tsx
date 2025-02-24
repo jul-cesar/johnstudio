@@ -7,18 +7,19 @@ export function InfiniteSliderVertical() {
   return (
     <div className="min-h-screen w-full relative overflow-hidden md:space-x-8 space-x-3">
       <StarsBackground />
-      <div className="flex flex-col items-center justify-center min-h-screen  text-white">
+      <div className="flex flex-col items-center text-center   justify-center min-h-screen  text-white">
         <GradientHeading size="xl" variant={"perso"}>
           Algunas de nuestras obras maestras
         </GradientHeading>
         <TextAnimate
           animation="blurIn"
           as="h3"
-          className="text-[#FCA04D] text-3xl font-bold my-4"
+          className="text-[#FCA04D] text-2xl md:text-4xl font-bold my-4"
         >
           Una muestra de los proyectos que nos enorgullecen
         </TextAnimate>
-        <div className="flex h-[350px] md:space-x-5 space-x-3">
+
+        <div className="flex h-[350px] md:space-x-5 space-x-3 mt-4">
           <InfiniteSlider direction="vertical">
             <img
               src="/images/barliza/barliza1.jpg"

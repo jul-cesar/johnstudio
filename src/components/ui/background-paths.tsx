@@ -81,7 +81,7 @@ function FloatingPaths({ position }: { position: number }) {
 
 export function BackgroundPaths({
   title = "Background Paths",
-  subtitle = "Diseños, estrategia y contenidos.",
+  subtitle = "Transformamos promesas en realidades. Diseñamos, estratégicamente construimos y damos vida a los sueños de emprendedores que desean impactar y bendecir al mundo.",
 }: {
   title?: string;
   subtitle?: string;
@@ -135,7 +135,7 @@ export function BackgroundPaths({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-lg md:text-xl text-neutral-300 mb-8 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-neutral-300 mb-8 max-w-2xl mx-auto mt-2 "
           >
             {subtitle}
           </motion.p>
