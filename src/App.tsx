@@ -1,17 +1,16 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { InfiniteSliderVertical } from "./components/examples";
-import { LogoCarouselDemo } from "./components/LogoCarrousel";
-import PricingSection from "./components/PricingSection";
-import { BackgroundPaths } from "./components/ui/background-paths";
+import Contacto from "./pages/Contacto";
+import Landing from "./pages/Landing";
+import Nosotros from "./pages/Nosotros";
 
 function App() {
   return (
-    <section className="w-full">
-      <BackgroundPaths title="John Studio" />
-      <LogoCarouselDemo />
-      <InfiniteSliderVertical />
-      <PricingSection />
-    </section>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/contacto" element={<Contacto />} />
+      <Route path="/nosotros" element={<Nosotros />} />
+    </Routes>
   );
 }
 
