@@ -172,9 +172,18 @@ const pricingData = {
         price: "Negociable",
         description: "Estrategia completa de branding.",
         features: [
-          "Identidad visual: logotipo, colores, tipografía, imágenes y eslogan.",
-          "Características diferenciales del producto: empaque, calidad, diseño, etc.",
-          "Aspectos intangibles de la experiencia de marca: valor de marca, personalidad, reputación, propósito y experiencia del cliente.",
+          "logotipo",
+          "colores",
+          "tipografía",
+          "imágenes y eslogan",
+          "empaque",
+          "calidad",
+          "diseño, etc.",
+          "valor de marca",
+          "personalidad",
+          "reputación",
+          "propósito",
+          "experiencia del cliente.",
         ],
         message:
           "Hola, vengo de la web y estoy interesado en el Paquete Avanzado del plan Branding",
@@ -230,7 +239,7 @@ export default function CoolDarkPricingSection() {
             {Object.entries(pricingData).map(([key, { plans }]) => (
               <TabsContent key={key} value={key} className="mt-8">
                 <div
-                  className={`grid gap-6 sm:grid-cols-2 ${
+                  className={`grid gap-4 sm:grid-cols-2 ${
                     key === "Brand" ? "lg:grid-cols-4 " : "lg:grid-cols-3"
                   }`}
                 >

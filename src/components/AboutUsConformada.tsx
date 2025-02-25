@@ -19,7 +19,7 @@ const AboutUsConformada = () => {
         </h2>
       </div>
 
-      <div className="relative h-64 sm:h-80 lg:h-full my-4">
+      <div className="relative h-auto sm:h-80 lg:h-full my-4">
         <img
           src="/entidades.png"
           alt="John Studio Imagen"
