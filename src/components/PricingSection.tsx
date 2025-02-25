@@ -271,14 +271,16 @@ export default function CoolDarkPricingSection() {
                         </ul>
                       </CardContent>
                       <CardFooter>
-                        <Button className="w-full bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 transition-all duration-300">
-                          <Link
-                            to={`https://api.whatsapp.com/send?phone=573154034105&text=${encodeURIComponent(
-                              plan.message
-                            )}`}
-                          ></Link>
-                          Elegir plan
-                        </Button>
+                        <Link
+                          className="w-full"
+                          to={`https://api.whatsapp.com/send?phone=573154034105&text=${encodeURIComponent(
+                            plan.message
+                          )}`}
+                        >
+                          <Button className="w-full bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 transition-all duration-300">
+                            Elegir plan
+                          </Button>
+                        </Link>
                       </CardFooter>
                     </Card>
                   ))}
