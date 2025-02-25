@@ -4,16 +4,16 @@ import { FaTiktok } from "react-icons/fa";
 const Footer = () => {
   const footerNavs = [
     {
-      href: "javascript:void()",
+      href: "/nosotros",
       name: "Sobre nosotros",
     },
     {
-      href: "javascript:void()",
+      href: "https://linktr.ee/johns_rivero",
       name: "Contacto",
     },
 
     {
-      href: "javascript:void()",
+      href: "#team",
       name: "Nuestro equipo",
     },
   ];

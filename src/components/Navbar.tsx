@@ -73,12 +73,7 @@ const Navbar = () => {
             >
               Sobre nosotros
             </Link>
-            <Link
-              to="/nosotros"
-              className="text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
-            >
-              About
-            </Link>
+
             <a
               href="#pricing"
               className="text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"

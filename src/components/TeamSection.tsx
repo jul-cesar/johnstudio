@@ -17,7 +17,7 @@ const TeamSection = () => {
     {
       avatar: "https://randomuser.me/api/portraits/women/79.jpg",
       name: "Jose Noseeee",
-      title: "Animado 2d y 3d",
+      title: "Animador 2D y 3D",
     },
 
     {
@@ -43,10 +43,10 @@ const TeamSection = () => {
             </p>
           </div>
           <div className="mt-12">
-            <ul className="grid gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+            <ul className="grid gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
               {team.map((item, idx) => (
                 <li key={idx}>
-                  <div className="w-20 h-20 mx-auto">
+                  <div className="size-32 mx-auto">
                     <img
                       src={item.avatar}
                       className="w-full h-full rounded-full"
@@ -54,10 +54,8 @@ const TeamSection = () => {
                     />
                   </div>
                   <div className="mt-2">
-                    <h4 className="text-gray-700 font-semibold sm:text-lg">
-                      {item.name}
-                    </h4>
-                    <p className="text-indigo-600">{item.title}</p>
+                    <h4 className="font-bold sm:text-lg">{item.name}</h4>
+                    <p className="font font-semibold">{item.title}</p>
                   </div>
                 </li>
               ))}
