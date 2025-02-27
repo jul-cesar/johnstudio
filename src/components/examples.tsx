@@ -8,13 +8,13 @@ export function InfiniteSliderVertical() {
     <div className="min-h-screen w-full relative overflow-hidden md:space-x-8 space-x-3">
       <StarsBackground />
       <div className="flex flex-col items-center text-center   justify-center min-h-screen  text-white">
-        <GradientHeading size="xl" variant={"perso"}>
+        <GradientHeading size="xl" variant={"perso"} weight={"thin"}>
           Algunas de nuestras obras maestras
         </GradientHeading>
         <TextAnimate
           animation="blurIn"
           as="h3"
-          className="text-[#FCA04D] text-2xl md:text-4xl font-bold my-4"
+          className="text-[#FCA04D] text-2xl md:text-4xl  my-4 font-magz"
         >
           Una muestra de los proyectos que nos enorgullecen
         </TextAnimate>

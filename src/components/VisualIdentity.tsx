@@ -6,7 +6,7 @@ const VisualIdentity = () => {
     <section className="max-w-screen-xl mx-auto px-4 py-16 sm:px-6 lg:px-8 min-h-screen flex flex-col items-center justify-center">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="flex flex-col justify-center">
-          <GradientHeading size="xl" variant={"perso"}>
+          <GradientHeading size="xl" variant={"perso"} weight={"thin"}>
             John Studio Visual Identity
           </GradientHeading>
 

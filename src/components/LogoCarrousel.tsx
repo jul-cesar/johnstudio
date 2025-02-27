@@ -419,12 +419,12 @@ export function LogoCarouselDemo() {
             <TextAnimate
               animation="blurIn"
               as="h1"
-              className="text-[#FCA04D] text-3xl md:text-4xl font-bold"
+              className="text-[#FCA04D] text-3xl md:text-4xl  font-magz"
             >
               Algunos de nuestros clientes
             </TextAnimate>
 
-            <GradientHeading size="xl" variant={"perso"}>
+            <GradientHeading size="xl" variant={"perso"} weight={"thin"}>
               Unetenos!
             </GradientHeading>
           </div>

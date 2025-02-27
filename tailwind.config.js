@@ -8,7 +8,7 @@ export default {
   theme: {
   	extend: {
 		fontFamily: {
-			magz: ["Magz"]
+			magz: ["Magz Regular"]
 		},
   		borderRadius: {
   			lg: 'var(--radius)',

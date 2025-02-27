@@ -6,8 +6,8 @@ const TeamSection = () => {
     {
       avatar:
         "https://ugc.production.linktr.ee/92c8406d-6d3d-4367-949f-2c73fffa2d74_WhatsApp-Image-2023-12-29-at-5.23.02-PM.jpeg?io=true&size=avatar-v3_0",
-      name: "John Rivero",
-      title: "CEO",
+      name: "John S Rivero",
+      title: "CEO, Director creativo Y Diseñador grafico",
     },
     {
       avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
@@ -16,8 +16,8 @@ const TeamSection = () => {
     },
     {
       avatar: "https://randomuser.me/api/portraits/women/79.jpg",
-      name: "Jose Noseeee",
-      title: "Animador 2D y 3D",
+      name: "Juan David Montes",
+      title: "Productor audiovisual",
     },
 
     {
@@ -34,7 +34,7 @@ const TeamSection = () => {
       <section className="py-14">
         <div className="max-w-screen-xl mx-auto px-4 text-center md:px-8">
           <div className="max-w-xl mx-auto">
-            <GradientHeading size="xl" variant={"perso"}>
+            <GradientHeading size="xl" variant={"perso"} weight={"thin"}>
               Conoce nuestro equipo
             </GradientHeading>
             <p className="max-w-[900px] text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed my-4">

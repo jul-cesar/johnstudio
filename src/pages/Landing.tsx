@@ -10,7 +10,7 @@ const Landing = () => {
   return (
     <section className="w-full">
       <Navbar />
-      <BackgroundPaths title="John Studio" />
+      <BackgroundPaths title="JohnStudio" />
       <LogoCarouselDemo />
       <InfiniteSliderVertical />
       <div id="team">

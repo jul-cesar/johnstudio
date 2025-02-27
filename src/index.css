@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Magz";
-  src: url("johnstudio\assets\fonts\Magz.otf") format("otf");
-  font-weight: normal;
+  font-family: "Magz Regular";
   font-style: normal;
+  font-weight: normal;
+  src: local("Magz Regular"), url("Magz.woff") format("woff");
 }
 
 @layer base {

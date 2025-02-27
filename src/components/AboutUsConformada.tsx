@@ -12,7 +12,8 @@ const AboutUsConformada = () => {
     <section className="max-w-screen-xl mx-auto px-4 py-16 sm:px-6 lg:px-8 min-h-screen flex flex-col items-center justify-center">
       <div className="text-center mb-12">
         <h1 className="mb-4 text-4xl font-extrabold leading-tight tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-          Sobre <span className="text-primary">John Studio</span>
+          Sobre{" "}
+          <span className="text-primary font-magz font-normal">JohnStudio</span>
         </h1>
         <h2 className="mb-6 text-2xl font-bold text-gray-700 md:text-3xl lg:text-4xl dark:text-gray-200">
           ¿Cómo estará conformada?

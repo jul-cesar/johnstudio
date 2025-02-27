@@ -5,7 +5,10 @@ const AboutUsFirst = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="flex flex-col justify-center">
           <h1 className="mb-6 text-4xl font-extrabold leading-tight tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-            Sobre <span className="text-primary">John Studio</span>
+            Sobre{" "}
+            <span className="text-primary font-magz font-normal">
+              JohnStudio
+            </span>
           </h1>
 
           <p className="mb-6 text-lg font-normal text-gray-600 dark:text-gray-300">

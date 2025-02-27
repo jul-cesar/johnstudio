@@ -4,7 +4,7 @@ import React from "react";
 import { cn } from "../../lib/utils";
 
 const headingVariants = cva(
-  "tracking-tight pb-3 bg-clip-text text-transparent",
+  "tracking-tight pb-3 bg-clip-text text-transparent font-magz",
   {
     variants: {
       variant: {
@@ -14,7 +14,7 @@ const headingVariants = cva(
         light: "bg-gradient-to-t from-neutral-200 to-neutral-300",
         secondary:
           "bg-gradient-to-t from-neutral-500 to-neutral-600 dark:from-stone-200 dark:to-neutral-200",
-        perso: "bg-gradient-to-r from-[#E13D21] to-[#57176A]",
+        perso: "bg-gradient-to-r from-[#E13D21] to-[#57176A] ",
       },
 
       size: {
