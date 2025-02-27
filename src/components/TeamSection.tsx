@@ -10,12 +10,12 @@ const TeamSection = () => {
       title: "CEO, Director creativo Y Diseñador grafico",
     },
     {
-      avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
+      avatar: "https://randomuser.me/api/portraits/women/79.jpg ",
       name: "Nicole Batista",
       title: "Community Manager",
     },
     {
-      avatar: "https://randomuser.me/api/portraits/women/79.jpg",
+      avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
       name: "Juan David Montes",
       title: "Productor audiovisual",
     },

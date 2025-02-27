@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.cdnfonts.com/css/magz");
-
 @font-face {
   font-family: "Magz Regular";
   font-style: normal;
