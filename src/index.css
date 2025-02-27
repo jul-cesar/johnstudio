@@ -6,7 +6,7 @@
   font-family: "Magz Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Magz Regular"), url("Magz.woff") format("woff");
+  src: local("Magz Regular"), url("/johnstudio/assets/Magz.woff") format("woff");
 }
 
 @layer base {
