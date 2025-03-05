@@ -213,7 +213,7 @@ export default function CoolDarkPricingSection() {
 
   return (
     <section className="w-full py-16 text-white">
-      <div className="container px-4 md:px-6">
+      <div className="max-w-full px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 font-magz">
             Nuestros Planes
