@@ -19,8 +19,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className=" px-4 bg-[#060606] border border-t-border border-l-0 border-r-0 py-5 max-w-screen-xl mx-auto md:px-8 font-semibold">
-      <div className="max-w-lg sm:mx-auto sm:text-center">
+    <footer className=" px-4 bg-[#060606] border border-t-border border-l-0 border-r-0 py-5 max-w-full mx-auto md:px-8 font-semibold">
+      <div className="max-w-full sm:mx-auto sm:text-center">
         <img src="jsticon.svg" className="w-32 sm:mx-auto" />
         <p className="leading-relaxed mt-2 text-[15px]">
           Le prometí a Moisés que les daría a ustedes todo lugar por donde

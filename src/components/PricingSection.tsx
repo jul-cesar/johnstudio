@@ -1,5 +1,3 @@
-"use client";
-
 import { Check } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -226,7 +224,7 @@ export default function CoolDarkPricingSection() {
           </p>
         </div>
 
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-full">
           <Tabs
             value={activeTab}
             onValueChange={setActiveTab}
