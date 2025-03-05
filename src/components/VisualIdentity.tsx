@@ -37,7 +37,7 @@ const VisualIdentity = () => {
           </Button> */}
         </div>
 
-        <div className="relative h-32 sm:h-80 lg:h-full">
+        <div className="relative h-32 sm:h-36 lg:h-auto">
           <img
             src="/logoEntidad2.png"
             alt="John Studio Imagen"

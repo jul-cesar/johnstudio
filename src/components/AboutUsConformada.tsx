@@ -1,15 +1,9 @@
-import {
-  BarChart2,
-  FileText,
-  Palette,
-  SeparatorHorizontal,
-  Users,
-} from "lucide-react";
+import { BarChart2, FileText, Palette, Users } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 
 const AboutUsConformada = () => {
   return (
-    <section className="max-w-screen-xl mx-auto px-4 py-16 sm:px-6 lg:px-8 min-h-screen flex flex-col items-center justify-center">
+    <section className="max-w-screen-xl mx-auto px-4 py-16 sm:px-6 lg:px-8 min-h-screen flex flex-col items-center justify-center bg-[#060606] ">
       <div className="text-center mb-12">
         <h1 className="mb-4 text-4xl font-extrabold leading-tight tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           Sobre{" "}
@@ -85,8 +79,6 @@ const AboutUsConformada = () => {
           </CardContent>
         </Card>
       </div>
-
-      <SeparatorHorizontal className="my-8" />
 
       <div className="text-center">
         <blockquote className="p-4 my-4 border-l-4 border-primary  max-w-2xl mx-auto">
