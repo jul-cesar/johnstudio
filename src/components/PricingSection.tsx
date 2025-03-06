@@ -205,6 +205,58 @@ const pricingData = {
       },
     ],
   },
+  DW: {
+    fullName: "Diseño y desarrollo de paginas webs.",
+    description:
+      "Desde simples landing pages hasta complejas aplicaciones web, damos vida a tu visión digital. Elige el nivel de servicio que se ajuste a tus necesidades y observa cómo tu presencia en línea se eleva.",
+    plans: [
+      {
+        title: "Paquete Básico",
+        price: "600mil",
+        description: "Perfecto para pequeñas empresas y sitios web personales.",
+        features: [
+          "Sitio web 1-3 páginas",
+          "Diseño responsivo",
+          "Optimización SEO básica",
+          "1 mes de soporte",
+        ],
+        message:
+          "Hola, vengo de la web y estoy interesado en el Paquete Básico de desarrollo web",
+        popular: false,
+      },
+      {
+        title: "Paquete Intermedio",
+        price: "900mil+",
+        description: "Ideal para negocios en crecimiento",
+        features: [
+          "Sitio web de múltiples páginas",
+          "Funcionalidades personalizadas",
+          "Diseño personalizado",
+          "Optimización SEO avanzada",
+          "1 meses de soporte",
+        ],
+        message:
+          "Hola, vengo de la web y estoy interesado en el Paquete Intermedio de desarrollo web",
+        popular: false,
+      },
+      {
+        title: "Paquete Avanzado",
+        price: "Negociable",
+        description: "Para empresas que necesitan aplicaciones web complejas.",
+        features: [
+          "Aplicación web full-stack",
+          "Integración de base de datos",
+          "Autenticación de usuarios",
+          "Desarrollo de API",
+          "Funcionalidad personalizada",
+          "2 meses de soporte y mantenimiento",
+        ],
+        message:
+          "Hola, vengo de la web y estoy interesado en el Paquete Avanzado de desarrollo web",
+        popular: true,
+      },
+    ],
+  },
 };
 
 export default function CoolDarkPricingSection() {
@@ -230,7 +282,7 @@ export default function CoolDarkPricingSection() {
             onValueChange={setActiveTab}
             className="w-full"
           >
-            <TabsList className="grid w-full grid-cols-3 mb-2 p-1 rounded-lg bg-zinc-800/50">
+            <TabsList className="grid w-full grid-cols-4 mb-2 p-1 rounded-lg bg-zinc-800/50">
               {Object.entries(pricingData).map(([key, { fullName }]) => (
                 <TooltipProvider key={key}>
                   <Tooltip>
