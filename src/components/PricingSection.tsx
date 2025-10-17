@@ -1,6 +1,5 @@
 import { Check } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -19,112 +18,76 @@ import {
 } from "./ui/tooltip";
 
 const pricingData = {
-  CC: {
-    fullName: "Creación de Contenido",
+  SM: {
+    fullName: "Plan de Social Media",
     description:
-      "Paquetes diseñados para potenciar tu presencia digital con contenido de alta calidad.",
+      "Paquetes de publicaciones diseñados para mantener tu presencia activa en redes sociales.",
     plans: [
       {
-        title: "Paquete 1",
-        price: "$300K",
-        description: "Ideal para emprendedores que están comenzando.",
+        title: "6 Posts",
+        price: "$300.000",
+        description: "Ideal para mantener presencia constante.",
         features: [
-          "Optimización de redes sociales",
-          "Community Manager",
-          "Calendario de contenido",
-          "5 diseños de historias",
-          "2 reels",
-          "2 posts/carruseles",
+          "6 publicaciones mensuales",
+          "Diseño profesional",
+          "Contenido adaptado a tu marca",
         ],
         message:
-          "Hola, vengo de la web y estoy interesado en el paquete 1 del plan Creación de Contenido",
+          "Hola, vengo de la web y estoy interesado en el plan de 6 Posts de Social Media",
         popular: false,
       },
       {
-        title: "Paquete 2",
-        price: "$500K",
-        description: "Perfecto para emprendedores en crecimiento.",
+        title: "12 Posts",
+        price: "$550.000",
+        description: "Perfecto para mayor engagement.",
         features: [
-          "Optimización de redes sociales",
-          "Community Manager",
-          "Calendario de contenido",
-          "8 diseños de historias",
-          "4 reels",
-          "4 posts/carruseles",
+          "12 publicaciones mensuales",
+          "Diseño profesional",
+          "Contenido adaptado a tu marca",
+          "Mayor frecuencia de publicación",
         ],
         message:
-          "Hola, vengo de la web y estoy interesado en el paquete 2 del plan Creación de Contenido",
-        popular: false,
-      },
-      {
-        title: "Paquete 3",
-        price: "$700K",
-        description: "Para emprendedores que buscan destacar.",
-        features: [
-          "Optimización de redes sociales",
-          "Community Manager",
-          "Calendario de contenido",
-          "15 diseños de historias",
-          "6 reels",
-          "6 posts/carruseles",
-        ],
-        message:
-          "Hola, vengo de la web y estoy interesado en el paquete 3 del plan Creación de Contenido",
+          "Hola, vengo de la web y estoy interesado en el plan de 12 Posts de Social Media",
         popular: true,
       },
     ],
   },
-  "SM+": {
-    fullName: "Social Media + Creación de Contenido",
+  EM: {
+    fullName: "Estrategia Mensual",
     description:
-      "Soluciones integrales que combinan gestión de redes sociales y creación de contenido personalizado.",
+      "Soluciones integrales que incluyen estrategia, gestión y creación de contenido.",
     plans: [
       {
-        title: "Paquete Básico",
-        price: "$500K",
-        description: "Gestión básica de redes sociales.",
+        title: "Plan Básico",
+        price: "$1.000.000",
+        description: "Estrategia completa para tu marca.",
         features: [
           "Optimización de redes sociales",
-          "Community Manager",
           "Calendario de contenido",
-          "Informe mensual de estadísticas",
-          "1 historia semi-diaria",
-          "5 diseños + 3 reels + 3 posts/carruseles",
+          "Evaluación de métricas",
+          "1 historia diaria",
+          "8 publicaciones mensuales (4 reels + 4 posts)",
+          "15 fotografías",
         ],
         message:
-          "Hola, vengo de la web y estoy interesado en el Paquete Básico del plan Social Media + Creación de Contenido",
+          "Hola, vengo de la web y estoy interesado en el Plan Básico de Estrategia Mensual",
         popular: false,
       },
       {
-        title: "Paquete Intermedio",
-        price: "$900K",
-        description: "Gestión completa de redes sociales.",
+        title: "Plan Avanzado",
+        price: "$2.000.000",
+        description: "Estrategia premium para máximo impacto.",
         features: [
           "Optimización de redes sociales",
-          "Community Manager",
           "Calendario de contenido",
-          "Informe mensual de estadísticas",
-          "2 historias diarias",
-          "8 diseños + 6 reels + 6 posts/carruseles",
+          "Evaluación de métricas",
+          "Portafolio estratégico",
+          "3 historias diarias",
+          "16 publicaciones mensuales (8 reels + 8 posts)",
+          "35 fotografías",
         ],
         message:
-          "Hola, vengo de la web y estoy interesado en el Paquete Intermedio del plan Social Media + Creación de Contenido",
-        popular: false,
-      },
-      {
-        title: "Paquete Pro Avanzado",
-        price: "Negociable",
-        description: "Solución integral para empresas.",
-        features: [
-          "Optimización de redes sociales",
-          "Community Manager",
-          "Calendario de contenido",
-          "Informe mensual de estadísticas",
-          "4 historias diarias",
-          "15 diseños + 9 reels + 9 posts/carruseles",
-        ],
-        message:
-          "Hola, vengo de la web y estoy interesado en el Paquete Pro Avanzado del plan Social Media + Creación de Contenido",
+          "Hola, vengo de la web y estoy interesado en el Plan Avanzado de Estrategia Mensual",
         popular: true,
       },
     ],
@@ -135,72 +98,38 @@ const pricingData = {
       "Servicios de branding profesional para construir una identidad de marca sólida y memorable.",
     plans: [
       {
-        title: "Paquete Emprendedor",
-        price: "$200K",
-        description: "Establece tu presencia de marca.",
-        features: [
-          "Diseño de logo",
-          "Paleta de colores y tipografía",
-          "Tarjetas de presentación (mockups)",
-        ],
-        message:
-          "Hola, vengo de la web y estoy interesado en el Paquete Emprendedor del plan Branding",
-        popular: false,
-      },
-      {
-        title: "Paquete Básico",
-        price: "$400K",
-        description: "Crea una marca coherente y profesional.",
-        features: [
-          "Branding",
-          "Logo",
-          "Paleta de colores",
-          "Tipografía",
-          "Tarjetas de presentación",
-          "Manual de identidad",
-        ],
-        message:
-          "Hola, vengo de la web y estoy interesado en el Paquete Básico del plan Branding",
-        popular: false,
-      },
-      {
-        title: "Paquete Medio",
-        price: "$600K",
-        description: "Desarrolla una marca poderosa y memorable.",
+        title: "Paquete Branding",
+        price: "$1.000.000",
+        description: "Identidad de marca completa.",
         features: [
           "Moodboard",
           "Logo",
           "Paleta de colores",
-          "Tipografía",
-          "Tarjetas de presentación",
-          "Dotación",
-          "Post de presentación de marca",
+          "Tipografías",
+          "Tarjeta de presentación",
+          "Dotaciones",
+          "Presentación de marca",
           "Manual de identidad",
         ],
         message:
-          "Hola, vengo de la web y estoy interesado en el Paquete Medio del plan Branding",
+          "Hola, vengo de la web y estoy interesado en el Paquete Branding",
         popular: false,
       },
       {
-        title: "Paquete Avanzado",
-        price: "Negociable",
-        description: "Estrategia completa de branding.",
+        title: "Branding Completo",
+        price: "$4.000.000",
+        description: "Solución integral de branding profesional.",
         features: [
-          "Logotipo profesional",
-          "Sistema de colores corporativos",
-          "Selección de tipografía",
-          "Imágenes y eslogan de marca",
-          "Diseño de empaque",
-          "Estándares de calidad",
-          "Experiencia de diseño integral",
-          "Definición de valor de marca",
-          "Desarrollo de personalidad de marca",
-          "Estrategia de reputación",
-          "Declaración de propósito",
-          "Diseño de experiencia del cliente",
+          "Brief y análisis de marca",
+          "Creación de logotipo + variantes",
+          "Paleta de colores y tipografía",
+          "Elementos gráficos (íconos, patrones, texturas)",
+          "Aplicaciones visuales (mockups, redes, papelería)",
+          "Manual de marca digital (PDF + archivos editables)",
+          "Presentación profesional del proyecto",
         ],
         message:
-          "Hola, vengo de la web y estoy interesado en el Paquete Avanzado del plan Branding",
+          "Hola, vengo de la web y estoy interesado en el Paquete de Branding Completo",
         popular: true,
       },
     ],
@@ -260,14 +189,14 @@ const pricingData = {
 };
 
 export default function CoolDarkPricingSection() {
-  type PricingDataKey = "CC" | "SM+" | "Brand";
-  const [activeTab, setActiveTab] = useState<PricingDataKey>("CC");
+  type PricingDataKey = "SM" | "EM" | "Brand" | "DW";
+  const [activeTab, setActiveTab] = useState<PricingDataKey>("SM");
 
   return (
     <section className="w-full py-16 text-white">
       <div className="max-w-full px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <h2 className="text-3xl sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 font-magz">
+          <h2 className="text-3xl sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 font-bold">
             Nuestros Planes
           </h2>
           <p className="max-w-[900px] text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -309,7 +238,7 @@ export default function CoolDarkPricingSection() {
             {/* Title display below tabs */}
             <div className="w-full text-center mb-8 mt-2">
               <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-orange-500">
-                {pricingData[activeTab].fullName}
+                {pricingData[activeTab as keyof typeof pricingData].fullName}
               </h3>
             </div>
 
@@ -325,7 +254,7 @@ export default function CoolDarkPricingSection() {
                   {plans.map((plan, index) => (
                     <Card
                       key={index}
-                      className={`relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-zinc-800/80 border-zinc-700 ${
+                      className={`relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-zinc-800/80 border-zinc-700 flex flex-col ${
                         plan.popular ? "ring-2 ring-pink-500/50" : ""
                       }`}
                     >
@@ -342,7 +271,7 @@ export default function CoolDarkPricingSection() {
                           {plan.description}
                         </CardDescription>
                       </CardHeader>
-                      <CardContent className="pb-6">
+                      <CardContent className="pb-6 flex-grow">
                         <div className="mb-4">
                           <span className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-orange-500">
                             {plan.price}
@@ -365,10 +294,10 @@ export default function CoolDarkPricingSection() {
                           ))}
                         </ul>
                       </CardContent>
-                      <CardFooter>
-                        <Link
+                      <CardFooter className="mt-auto">
+                        <a
                           className="w-full"
-                          to={`https://api.whatsapp.com/send?phone=573154034105&text=${encodeURIComponent(
+                          href={`https://api.whatsapp.com/send?phone=573154034105&text=${encodeURIComponent(
                             plan.message
                           )}`}
                           target="_blank"
@@ -377,7 +306,7 @@ export default function CoolDarkPricingSection() {
                           <Button className="w-full bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 transition-all duration-300">
                             Elegir plan
                           </Button>
-                        </Link>
+                        </a>
                       </CardFooter>
                     </Card>
                   ))}

@@ -22,7 +22,7 @@ const TeamSection = () => {
     },
     {
       avatar: "https://randomuser.me/api/portraits/women/79.jpg",
-      name: "Nicole Batista",
+      name: "Gira Serrano",
       title: "Community Manager",
       words: "Creativa, innovadora, atenta",
       social: [
@@ -30,16 +30,16 @@ const TeamSection = () => {
         { name: "LinkedIn", url: "#" },
       ],
     },
-    {
-      avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
-      name: "Juan David Montes",
-      title: "Productor audiovisual",
-      words: "Empático, Creativo, Responsable",
-      social: [
-        { name: "Twitter", url: "#" },
-        { name: "LinkedIn", url: "#" },
-      ],
-    },
+    // {
+    //   avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
+    //   name: "Juan David Montes",
+    //   title: "Productor audiovisual",
+    //   words: "Empático, Creativo, Responsable",
+    //   social: [
+    //     { name: "Twitter", url: "#" },
+    //     { name: "LinkedIn", url: "#" },
+    //   ],
+    // },
     {
       avatar:
         "https://media.licdn.com/dms/image/v2/D4E03AQGh3iMMHpvGTw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1725992842307?e=1746057600&v=beta&t=g2_WJYdXfHKJzQd0DwquVFl9EJIetXI93EdY-qa9Eg0",
@@ -74,7 +74,7 @@ const TeamSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
           {team.map((member, idx) => (
             <motion.div
               key={idx}
@@ -92,7 +92,7 @@ const TeamSection = () => {
                 ></div>
 
                 {/* Avatar with border */}
-                <div className="relative mx-auto size-40 md:size-44 mb-6 overflow-hidden">
+                {/* <div className="relative mx-auto size-40 md:size-44 mb-6 overflow-hidden">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#E13D21] to-[#57176A]">
                     <div className="absolute inset-0.5 rounded-full bg-black"></div>
                   </div>
@@ -101,7 +101,7 @@ const TeamSection = () => {
                     alt={member.name}
                     className="rounded-full object-cover size-full relative z-10 p-1.5"
                   />
-                </div>
+                </div> */}
 
                 {/* Content */}
                 <div className="relative z-10">
