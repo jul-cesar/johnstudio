@@ -1,6 +1,5 @@
 import { InfiniteSliderVertical } from "../components/examples";
 import Footer from "../components/Footer";
-import { LogoCarouselDemo } from "../components/LogoCarrousel";
 import Navbar from "../components/Navbar";
 import PricingSection from "../components/PricingSection";
 import TeamSection from "../components/TeamSection";
@@ -11,7 +10,7 @@ const Landing = () => {
     <section className="w-full">
       <Navbar />
       <BackgroundPaths title="JohnStudio" />
-      <LogoCarouselDemo />
+      {/* <LogoCarouselDemo /> */}
       <InfiniteSliderVertical />
       <div id="team">
         <TeamSection />
